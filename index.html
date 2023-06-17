@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Multiplication Tables</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Multiplication Tables Generator</h1>
+    <div id="mainContent">
+      <div id="formDiv">
+        <div id="leftElements"> 
+            <form id="tableForm">
+                <label for="minColVal">Minimum Column Value</label><br />
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  id="minColVal"
+                  class="formVals"
+                  name="minColVal"
+                /><br />
+                <label for="minColVal">Minimum Row Value</label><br />
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  id="minRowVal"
+                  class="formVals"
+                  name="minRowVal"
+                /><br />
+                <label for="minColVal">Maximum Column Value</label><br />
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  id="maxColVal"
+                  class="formVals"
+                  name="maxColVal"
+                /><br />
+                <label for="minColVal">Maximum Row Value</label><br />
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  id="maxRowVal"
+                  class="formVals"
+                  name="maxRowVal"
+                /><br />
+                <input
+                  type="button"
+                  id="regenerateButton"
+                  onclick="regenerateTable()"
+                  value="Regenerate Table"
+                />
+              </form>
+              <p id="error"></p>
+        </div>
+      </div>
+      <div id="tableSpace"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
